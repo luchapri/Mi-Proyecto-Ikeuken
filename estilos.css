@@ -1,0 +1,398 @@
+
+/*# sourceMappingURL=estilos.css.map */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family:Basic;
+    src: url(font/Basic\ Light.ttf);
+}
+
+@font-face {
+    font-family: Quentin;
+    src: url(font/Quentin.otf);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #992F59;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 110px;
+    font-family: Quentin;
+    font-weight: lighter;
+    /* font-size: 15px; */
+    padding: 0px 5px 5px 5px;   
+}
+.logo{
+    width: 30%;
+    height: 60px;
+}
+
+.main{
+    height: 30vh;
+    width: 100%;
+    color: #95B28D;
+    font-family: Quentin;
+    text-shadow: 0 0 10px #fff, 0 0 #8A8D8E, 0 0 10px #992F59 ;
+    text-align: center;
+    background-image: url(img/cazo-cerezas-sobre-mesa-madera-negra.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.btn{
+    background-color: #992F59;
+    font-family: Basic;
+    font-size: 10px;
+    margin: 10px 5px 5px 200px;
+}
+
+
+.origen{
+    font-size: 30px;
+    padding: 40px 20px 20px 100px;
+}
+.main2{
+    height: 30vh;
+    width: 100%;
+    background-color: #8A8D8E;
+    background-image: url(img/chacra.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.galeria{
+    min-height: auto;
+    width: 100%;
+    background-color: #000;
+    display: grid; 
+    grid-template-columns: 1fr 20% 1fr 1fr;
+    grid-template-rows: 45px 45px 45px;
+    grid-gap:0px;
+    grid-template-areas: 
+    "img1 img3 img5 img5"
+    "img1 img3 img5 img5"
+    "img1 img4 img5 img5"
+    "img1 img4 img5 img5"  
+    "img1 img2 img5 img5" 
+    "img1 img2 img5 img5"
+    "img1 img2 img5 img5";
+} 
+
+.img{
+    background-size: cover;
+    background-position: center;
+} 
+
+.img1{
+    grid-area: img1;
+    background-image: url(img/6.jpg);
+    background-size:100%;
+    background-repeat: no-repeat; 
+}
+.img2{
+    grid-area: img2;
+    background-image: url(img/1.jpg);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+.img3{
+    grid-area: img3;
+    background-image: url(img/4.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img4{
+    grid-area: img4;
+    background-image: url(img/car.jpg);
+    background-size: 90%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.img5{
+    grid-area: img5;
+    background-image: url(img/3.jpg) ;
+}
+.img6{
+    grid-area: img6;
+    background-image: url(img/5.jpg);
+}
+
+/* .contacto{
+    float: right;
+    margin: 80px 50px 10px 1000px;
+    text-decoration: none;
+    font-family: Basic;
+    font-size: 15px;
+    background-color: #166C47;
+    color: #fff;
+    padding: 5px 10px;
+    border: #000 solid 3px;
+} */
+
+li:hover{
+background-color: #992F59;
+}
+
+.sec{
+    background-color:#fff;
+    height: 30vh;
+    text-align: center;
+    font-family: Quentin;
+    font-weight: lighter;
+    font-size: 30px;
+    color: #8A8D8E;
+    padding: 100px 50px 0px 50px;
+}
+.antiguos{
+    font-size: Quentin;
+    font-size: 30px;
+}
+
+.cont1{
+    background-color: #fff;
+    background-size: cover;
+    width: 100%;
+    height: 20%;
+    background-repeat: no-repeat;
+    text-align: justify;
+    font-family: Basic;
+    font-size: 20px;
+    line-height : 30px;
+    color: #8A8D8E;
+    padding: 55px;
+}
+.cont2{
+    background-color: #fff;
+    width: 100%;
+    height: 40%;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: Basic;
+    font-size: 30px;
+    padding: 0px 20px 10px 30px;
+}
+
+footer{
+    display: flex;
+    flex-wrap:auto;
+    width: 100%;
+    height: 110px;
+    background-color: #992F59;
+    color: #000;
+    text-align: center;
+    font-size:10px;
+    padding: 30px;
+}
+
+.redes :hover{
+    color: #95B28D; 
+}
+
+
+.redes i{
+
+    font-size: 20px;
+    white-space: 10px;
+    letter-spacing: 100px;
+    color: #000;
+
+}
+.subir{
+    position: fixed;
+    right: 40 px;
+    bottom: 60px;
+    color: #8A8D8E;
+    font-weight: bold;
+    background-color: #992F59;
+    padding: 10px;
+    font-size: 30px;
+    margin: 10px 10px 30px 1600px;
+
+}
+.subir :hover{
+    color: #000;
+}
+.chacra{
+    height: 70vh;
+    width: 100%;  
+    background-color: #8A8D8E;
+    background-image: url(img/chacra.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.card{
+    font-family: Basic;
+}
+.preguntas{
+    font-family: Basic;
+    padding: 100px;
+}
+
+.btn2{
+        background-color: #992F59;
+        font-family: Basic;
+        font-weight: bold;
+        font-size: 15px;
+        margin: 10px 5px 5px 200px;
+
+}
+.mapa{
+    font-size: Basic;
+    width: 100%;
+    margin: 0px 300px 50px 300px;
+}
+.redes2{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family:Basic;
+    font-size: 60px;
+}
+.casa{
+    font-family: Basic;
+}
+
+@media only screen and (min-width361px) {
+.btn{
+    font-size: 10px;
+    margin: 10px 5px 5px 180px;
+}
+}
+@media only screen and (min-width: 437px ) {
+    .btn{
+        font-size: 10px;
+        margin: 10px 5px 5px 150px;
+    }
+    }
+@media only screen and (min-width: 470px) {
+        .btn{
+            font-size: 10px;
+            margin: 10px 5px 5px 250px;
+        } 
+    }  
+@media only screen and (min-width:570px) {
+    .galeria{
+        grid-template-rows: 45px 45px 45px 45px;
+    }
+    header{
+        font-size: 30px;}
+    .main2{
+            height: 50vh;
+        }
+}
+@media only screen and (min-width:597px) {
+    .btn{
+        font-size: 10px;
+        margin: 10px 5px 5px 400px;
+    }
+        .origen{
+            padding:80px 10px 0px 120px;
+            font: size 40px;}
+        }
+
+@media only screen and (min-width:600px) {
+    .main{
+        height: 50vh; 
+    }
+    .origen{
+        padding:80px 10px 0px 120px;
+        font-size:  45px;}
+    }
+    .galeria{
+        grid-template-rows: 45px 45px 45px 45px 45px;
+    }
+    header{
+        height: 125px;
+    }
+    .contacto{
+        margin: 300px 30px 10px 1000px;
+    }   
+
+    .iframe{
+        width:500px;
+        height:415px;
+}
+
+@media only screen and (min-width:600px) {
+    .btn{
+        font-size: 10px;
+        margin: 50px 5px 5px 500px;
+    }
+    .galeria{
+        grid-template-rows: 100px 50px 70px 70px 100px 50px 50px;
+}
+    
+    .barra a{
+        font-size: 13px;
+}
+    .sec{
+        font-size: 40px;
+    }
+    .iframe{
+        width:700px;
+        height:415px;
+}}
+
+@media only screen and (min-width:700px) {
+    .main2{
+        height: 60vh;
+}
+    .origen{
+        font-size: 40px}
+}
+@media only screen and (min-width:766px) {
+    .origen{
+        font-size: 40px;
+        padding:80px 10px 20px 150px ;
+        }
+}
+@media only screen and (min-width:796px) {
+    .origen{
+        font-size: 50px;
+        padding:90px 10px 20px 170px ;
+        }
+}
+@media only screen and (min-width:976px) {
+    .origen{
+        font-size: 50px;
+        padding:100px 10px 20px 240px;
+        }
+}
+
+@media only screen and (min-width:1000px) {
+    header{
+        font-size:30px;
+        height: 150px;
+    }
+    .origen{
+        font-size: 50px}
+    .barra a{
+        font-size: 15px;}
+        .main2{
+            height: 80vh;
+        }
+}
+@media only screen and (min-width:1045px) {
+    .origen{
+        padding:130px 10px 20px 270px;
+        }
+    .btn{
+            font-size: 10px;
+            margin: 50px 5px 5px 750px;
+        } 
+    }
