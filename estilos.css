@@ -97,15 +97,7 @@ header .barra {
   padding: 0px 20px 10px 30px;
 }
 
-.main2 {
-  height: 30vh;
-  width: 100%;
-  background-color: #8A8D8E;
-  background-image: url(img/chacra.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.main2 .galeria {
+.main11 .galeria {
   min-height: auto;
   width: 100%;
   background-color: #000;
@@ -115,17 +107,17 @@ header .barra {
   grid-gap: 0px;
   grid-template-areas: "img1 img3 img5 img5" "img1 img3 img5 img5" "img1 img4 img5 img5" "img1 img4 img5 img5" "img1 img2 img5 img5" "img1 img2 img5 img5" "img1 img2 img5 img5";
 }
-.main2 .img {
+.main11 .galeria .img {
   background-size: cover;
   background-position: center;
 }
-.main2 .img1 {
+.main11 .galeria .img1 {
   grid-area: img1;
   background-image: url(img/6.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.main2 .img2 {
+.main11 .galeria .img2 {
   grid-area: img2;
   background-image: url(img/1.jpg);
   background-size: 90%;
@@ -133,27 +125,36 @@ header .barra {
   background-repeat: no-repeat;
   border-radius: 4px;
 }
-.main2 .img3 {
+.main11 .galeria .img3 {
   grid-area: img3;
   background-image: url(img/4.png);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
-.main2 .img4 {
+.main11 .galeria .img4 {
   grid-area: img4;
   background-image: url(img/car.jpg);
   background-size: 90%;
   background-position: bottom;
   background-repeat: no-repeat;
 }
-.main2 .img5 {
+.main11 .galeria .img5 {
   grid-area: img5;
   background-image: url(img/3.jpg);
 }
-.main2 .img6 {
+.main11 .galeria .img6 {
   grid-area: img6;
   background-image: url(img/5.jpg);
+}
+
+.main2 {
+  height: 30vh;
+  width: 100%;
+  background-color: #8A8D8E;
+  background-image: url(img/chacra.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .main3 {

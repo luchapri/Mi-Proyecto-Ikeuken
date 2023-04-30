@@ -32,7 +32,7 @@ header{
     color: $color4;
     background-repeat: no-repeat;
     width: 100%;
-    height: 110px;
+    height: 10px;
     font-family: $font1;
     font-weight: lighter;
     .logo{
@@ -104,19 +104,11 @@ header{
     font-size: 30px;
     padding: 0px 20px 10px 30px;
 }
-
-
-
-.main2{
-    height: 30vh;
-    width: 100%;
-    background-color: $color3;
-    background-image: url(img/chacra.jpg);
-    background-size: cover;
-    background-position: center;
+.main11{
     .galeria{
         min-height: auto;
         width: 100%;
+        height: 60vh;
         background-color: $color4;
         display: grid; 
         grid-template-columns: 1fr 20% 1fr 1fr;
@@ -130,49 +122,57 @@ header{
         "img1 img2 img5 img5" 
         "img1 img2 img5 img5"
         "img1 img2 img5 img5";
-    } 
-        .img{
-            background-size: cover;
-            background-position: center;
-        }
+    .img{
+    background-size: cover;
+    background-position: center;
+    }
         .img1{
-            grid-area: img1;
-            background-image: url(img/6.jpg);
-            background-size:100%;
-            background-repeat: no-repeat; 
+        grid-area: img1;
+        background-image: url(img/6.jpg);
+        background-size:100%;
+        background-repeat: no-repeat; 
         }
         .img2{
-            grid-area: img2;
-            background-image: url(img/1.jpg);
-            background-size: 90%;
-            background-position: center;
-            background-repeat: no-repeat;
-            border-radius: 4px;
+        grid-area: img2;
+        background-image: url(img/1.jpg);
+        background-size: 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 4px;
         }
         .img3{
-            grid-area: img3;
-            background-image: url(img/4.png);
-            background-size: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
+        grid-area: img3;
+        background-image: url(img/4.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
         }
-        
         .img4{
-            grid-area: img4;
-            background-image: url(img/car.jpg);
-            background-size: 90%;
-            background-position: bottom;
-            background-repeat: no-repeat;
+        grid-area: img4;
+        background-image: url(img/car.jpg);
+        background-size: 90%;
+        background-position: bottom;
+        background-repeat: no-repeat;
         }
         .img5{
-            grid-area: img5;
-            background-image: url(img/3.jpg) ;
+        grid-area: img5;
+        background-image: url(img/3.jpg) ;
         }
         .img6{
-            grid-area: img6;
-            background-image: url(img/5.jpg);
+        grid-area: img6;
+        background-image: url(img/5.jpg);
         }
-    
+        }
+    }
+
+
+.main2{
+    height: 30vh;
+    width: 100%;
+    background-color: $color3;
+    background-image: url(img/chacra.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .main3{
     height: 70vh;
