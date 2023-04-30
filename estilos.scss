@@ -35,12 +35,13 @@ header{
     height: 110px;
     font-family: $font1;
     font-weight: lighter;
-    padding: 0px;
     .logo{
         width: 30%;
         height: 60px;
         font-family: $font1;
     }
+}
+    
     
     .nav{
         font-family: $font1;
@@ -48,10 +49,9 @@ header{
     .barra{ 
         width: 100%;
         height: 110px;
-        background-color: $color3;}
+        background-color: $color3;
+    }
     
-}
-
 .main{
     height: 30vh;
     width: 100%;
