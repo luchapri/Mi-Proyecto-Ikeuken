@@ -35,10 +35,11 @@ header{
     height: 110px;
     font-family: $font1;
     font-weight: lighter;
-    padding: 0px 5px 5px 5px;
+    padding: 0px 5px 5px 0px;
     .logo{
         width: 30%;
         height: 60px;
+        font-family: $font1;
     }
     
     .nav{

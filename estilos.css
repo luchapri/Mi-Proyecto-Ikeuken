@@ -22,11 +22,12 @@ header {
   height: 110px;
   font-family: Basic;
   font-weight: lighter;
-  padding: 0px 5px 5px 5px;
+  padding: 0px 5px 5px 0px;
 }
 header .logo {
   width: 30%;
   height: 60px;
+  font-family: Basic;
 }
 header .nav {
   font-family: Basic;
