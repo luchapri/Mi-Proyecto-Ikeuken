@@ -1,7 +1,13 @@
-
-
 @import url(font/Basic);
 @import url(font/Quentin);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -22,11 +28,11 @@ header {
   height: 110px;
   font-family: Basic;
   font-weight: lighter;
+  padding: 0px 5px 5px 5px;
 }
 header .logo {
   width: 30%;
   height: 60px;
-  font-family: Basic;
 }
 header .nav {
   font-family: Basic;
@@ -97,7 +103,18 @@ header .barra {
   padding: 0px 20px 10px 30px;
 }
 
-.main11 .galeria {
+.cha {
+  height: 30vh;
+  width: 100%;
+  background-color: #8A8D8E;
+}
+.cha .chacra {
+  background-image: url(./img/chacra.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.galeria {
   min-height: auto;
   width: 100%;
   background-color: #000;
@@ -107,17 +124,20 @@ header .barra {
   grid-gap: 0px;
   grid-template-areas: "img1 img3 img5 img5" "img1 img3 img5 img5" "img1 img4 img5 img5" "img1 img4 img5 img5" "img1 img2 img5 img5" "img1 img2 img5 img5" "img1 img2 img5 img5";
 }
-.main11 .galeria .img {
+
+.img {
   background-size: cover;
   background-position: center;
 }
-.main11 .galeria .img1 {
+
+.img1 {
   grid-area: img1;
   background-image: url(img/6.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.main11 .galeria .img2 {
+
+.img2 {
   grid-area: img2;
   background-image: url(img/1.jpg);
   background-size: 90%;
@@ -125,36 +145,31 @@ header .barra {
   background-repeat: no-repeat;
   border-radius: 4px;
 }
-.main11 .galeria .img3 {
+
+.img3 {
   grid-area: img3;
   background-image: url(img/4.png);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
-.main11 .galeria .img4 {
+
+.img4 {
   grid-area: img4;
   background-image: url(img/car.jpg);
   background-size: 90%;
   background-position: bottom;
   background-repeat: no-repeat;
 }
-.main11 .galeria .img5 {
+
+.img5 {
   grid-area: img5;
   background-image: url(img/3.jpg);
 }
-.main11 .galeria .img6 {
+
+.img6 {
   grid-area: img6;
   background-image: url(img/5.jpg);
-}
-
-.main2 {
-  height: 30vh;
-  width: 100%;
-  background-color: #8A8D8E;
-  background-image: url(img/chacra.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .main3 {
@@ -200,7 +215,7 @@ footer .redes i {
   background-color: #992F59;
   padding: 10px;
   font-size: 30px;
-  margin: 10px 10px 30px 1600px;
+  margin: 50px 10px 30px 1600px;
 }
 
 .subir :hover {
@@ -222,7 +237,7 @@ footer .redes i {
 .mapa {
   font-size: Basic;
   width: 100%;
-  margin: 0px 300px 50px 300px;
+  margin: 300px 5px 5px 100px;
 }
 
 .redes2 {
@@ -237,7 +252,7 @@ footer .redes i {
   font-family: Basic;
 }
 
-@media only screen and (min-width361px) {
+@media only screen and (min-width: 361px) {
   .btn {
     font-size: 10px;
     margin: 10px 5px 5px 180px;
@@ -284,24 +299,16 @@ footer .redes i {
     padding: 80px 10px 0px 120px;
     font-size: 45px;
   }
+  .galeria {
+    grid-template-rows: 45px 45px 45px 45px 45px;
+  }
+  header {
+    height: 125px;
+  }
+  .contacto {
+    margin: 300px 30px 10px 1000px;
+  }
 }
-.galeria {
-  grid-template-rows: 45px 45px 45px 45px 45px;
-}
-
-header {
-  height: 125px;
-}
-
-.contacto {
-  margin: 300px 30px 10px 1000px;
-}
-
-.iframe {
-  width: 500px;
-  height: 415px;
-}
-
 @media only screen and (min-width: 600px) {
   .btn {
     font-size: 10px;
