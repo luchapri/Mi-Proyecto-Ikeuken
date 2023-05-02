@@ -1,6 +1,7 @@
 @import url(font/Basic);
 @import url(font/Quentin);
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,200&family=Rubik+Iso&family=Ysabeau:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,200&family=Rubik+Iso&family=Ysabeau:wght@100&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,7 +27,7 @@ html {
 .header .logo {
   width: 30%;
   height: 60px;
-  font-family: Quetin;
+  font-family: Whisper;
 }
 .header .nav {
   display: flex;
@@ -44,7 +45,7 @@ html {
   font-family: Quentin;
   text-shadow: 0 0 10px #fff, 0 0 #8A8D8E, 0 0 10px #992F59;
   text-align: center;
-  background-image: url(../img/cazo-cerezas-sobre-mesa-madera-negra.jpg);
+  background-image: url(./img/cazo-cerezas-sobre-mesa-madera-negra.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -64,7 +65,7 @@ html {
   background-color: #fff;
   height: 25vh;
   text-align: center;
-  font-family: Quentin;
+  font-family: Whisper;
   font-weight: lighter;
   font-size: 30px;
   color: #8A8D8E;
