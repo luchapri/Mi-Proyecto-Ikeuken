@@ -1,7 +1,7 @@
-@import url(font/Basic);
-@import url(font/Quentin);
+@import url(./font/Basic\ Light.ttf);
+@import url(./font/Quentin.otf);
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,200&family=Rubik+Iso&family=Ysabeau:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,200&family=Rubik+Iso&family=Ysabeau:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Moon+Dance & family= Nunito+Sans:ital,wght@0,300;1,200 & family= Oooh+Baby & family= Rubik+ Iso & family= Susurro & display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,14 +27,17 @@ html {
 .header .logo {
   width: 30%;
   height: 60px;
-  font-family: Whisper;
+}
+.header .navbar {
+  font-family: Basic;
+  font-size: 30px;
 }
 .header .nav {
   display: flex;
   justify-content: flex-end;
   width: 1400px;
   height: 100px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: Basic;
   font-size: 10px;
 }
 
@@ -42,30 +45,36 @@ html {
   height: 30vh;
   width: 100%;
   color: #95B28D;
-  font-family: Quentin;
+  font-family: Basic;
   text-shadow: 0 0 10px #fff, 0 0 #8A8D8E, 0 0 10px #992F59;
   text-align: center;
   background-image: url(./img/cazo-cerezas-sobre-mesa-madera-negra.jpg);
   background-size: cover;
   background-position: center;
 }
+.main .origen {
+  font-family: Quentin;
+  font-size: 40px;
+  padding: 100px 20px 20px 100px;
+}
 .main .btn {
   background-color: #992F59;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: Basic;
   font-size: 12px;
-  margin: 10px 5px 5px 200px;
+  margin: 50px 5px 5px 500px;
 }
-
-.origen {
-  font-size: 30px;
-  padding: 40px 20px 20px 100px;
+.main .btn .btn :hover {
+  color: #95B28D;
+}
+.main .btn .btn :hover {
+  color: #95B28D;
 }
 
 .sec {
   background-color: #fff;
   height: 25vh;
   text-align: center;
-  font-family: Whisper;
+  font-family: Quentin;
   font-weight: lighter;
   font-size: 30px;
   color: #8A8D8E;

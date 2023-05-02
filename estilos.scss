@@ -7,10 +7,11 @@
 /*# sourceMappingURL=estilos.css.map */
 /*# sourceMappingURL=estilos.css.map */
 
-@import url(font/Basic);
-@import url(font/Quentin);
+@import url(./font/Basic\ Light.ttf);
+@import url(./font/Quentin.otf);
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,200&family=Rubik+Iso&family=Ysabeau:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,200&family=Rubik+Iso&family=Ysabeau:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Moon+Dance & family= Nunito+Sans:ital,wght@0,300;1,200 & family= Oooh+Baby & family= Rubik+ Iso & family= Susurro & display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +32,7 @@ $color5: #fff;
 $font1: Basic;
 $font2: Quentin;
 $font3: 'Nunito Sans', sans-serif;
-$font4: Whisper;
+$font4: 'Moon Dance', cursiva; 
 
 // index
 .header{
@@ -40,15 +41,18 @@ $font4: Whisper;
     .logo {
         width: 30%;
         height: 60px;
-        font-family: $font4;
     }
+    .navbar{
+        font-family: Basic;
+        font-size: 30px;
 
+    }
     .nav {
         display: flex;
         justify-content: flex-end;
         width: 1400px;
         height: 100px;
-        font-family: $font3;
+        font-family: $font1;
         font-size: 10px;
     }
 
@@ -59,32 +63,35 @@ $font4: Whisper;
     height: 30vh;
     width: 100%;
     color: $color2;
-    font-family: $font2;
+    font-family: $font1;
     text-shadow: 0 0 10px $color5, 0 0 $color3, 0 0 10px $color1 ;
     text-align: center;
     background-image: url(./img/cazo-cerezas-sobre-mesa-madera-negra.jpg);
     background-size: cover;
     background-position: center;
+    .origen {
+        font-family: $font2;
+        font-size: 40px;
+        padding: 100px 20px 20px 100px;
+    }
     .btn {
         background-color: $color1;
-        font-family: $font3;
+        font-family: $font1;
         font-size: 12px;
-        margin: 10px 5px 5px 200px;
+        margin: 50px 5px 5px 500px;
+        .btn :hover{
+            color: $color2;
+        }
+    .btn :hover{
+        color: $color2;
+    }   
     }
-    
 }
-
-.origen {
-    font-size: 30px;
-    padding: 40px 20px 20px 100px;
-}
-
-
 .sec {
     background-color: $color5;
     height: 25vh;
     text-align: center;
-    font-family: $font4;
+    font-family: $font2;
     font-weight: lighter;
     font-size: 30px;
     color: $color3;
