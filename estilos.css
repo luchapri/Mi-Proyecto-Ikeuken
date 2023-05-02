@@ -62,12 +62,12 @@ html {
 
 .sec {
   background-color: #fff;
-  height: 30vh;
+  height: 25vh;
   text-align: center;
   font-family: Quentin;
   font-weight: lighter;
   font-size: 30px;
-  color: #fff;
+  color: #8A8D8E;
   padding: 100px 50px 0px 50px;
 }
 
@@ -97,18 +97,18 @@ html {
 }
 
 #cha {
-  height: 500px;
+  height: 400px;
   width: 100%;
   background-size: cover;
-  background-position: bottom;
-  min-height: 1000px;
+  background-position: center;
   position: relative;
   overflow: hidden;
 }
-#cha video {
+#cha .video {
   position: relative;
   left: 0;
   top: 0;
+  margin: 0;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -182,7 +182,8 @@ html {
 }
 
 .card {
-  font-family: Basic;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
 }
 
 footer {
@@ -224,7 +225,7 @@ footer .redes i {
 
 .preguntas {
   font-family: Basic;
-  padding: 100px;
+  padding: 0px 10px 0px 200px;
 }
 .preguntas .btn2 {
   background-color: #992F59;
@@ -237,12 +238,13 @@ footer .redes i {
 .mapa {
   font-size: Basic;
   width: 100%;
-  margin: 300px 5px 5px 100px;
+  margin: 0px 5px 5px 100px;
 }
 
 .redes2 {
   display: flex;
   justify-content: space-around;
+  height: 20px;
   text-align: center;
   font-family: Basic;
   font-size: 60px;
