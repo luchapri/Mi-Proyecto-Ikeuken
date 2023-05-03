@@ -48,7 +48,7 @@ html {
   font-family: Basic;
   text-shadow: 0 0 10px #fff, 0 0 #8A8D8E, 0 0 10px #992F59;
   text-align: center;
-  background-image: url(./img/cazo-cerezas-sobre-mesa-madera-negra.jpg);
+  background-image: url(./img/cazo-cerezas-sobre-mesa-madera-n.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -87,7 +87,7 @@ html {
   background-color: #95B28D;
   font-family: Basic;
   font-size: 12px;
-  margin: 50px 5px 5px 500px;
+  margin: 50px 5px 5px 100px;
 }
 .btn .btn :hover {
   color: #000;
@@ -146,7 +146,7 @@ html {
 }
 
 .ratio {
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 .galeria {
@@ -174,8 +174,8 @@ html {
 
 .img2 {
   grid-area: img2;
-  background-image: url(img/1.jpg);
-  background-size: 90%;
+  background-image: url(img/1\ \(1\).jpg);
+  background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 4px;
@@ -199,7 +199,7 @@ html {
 
 .img5 {
   grid-area: img5;
-  background-image: url(img/3.jpg);
+  background-image: url(img/3\ \(1\).jpg);
 }
 
 .img6 {
@@ -214,6 +214,12 @@ html {
   background-image: url(img/chacra.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.preguntas {
+  font-family: Basic;
+  padding: 0px 10px 0px 10px;
+  margin: 2px 25px 2px 20px;
 }
 
 .card {
@@ -272,11 +278,7 @@ footer .redes i {
   color: #000;
 }
 
-.preguntas {
-  font-family: Basic;
-  padding: 0px 10px 0px 200px;
-}
-.preguntas .btn2 {
+.btn2 {
   background-color: #992F59;
   font-family: Basic;
   font-weight: bold;
@@ -287,7 +289,7 @@ footer .redes i {
 .mapa {
   font-size: Basic;
   width: 100%;
-  margin: 0px 5px 5px 100px;
+  margin: 0px 5px 20px 20px;
 }
 
 .redes2 {

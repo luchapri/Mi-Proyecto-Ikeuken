@@ -66,7 +66,7 @@ $font4: 'Moon Dance', cursiva;
     font-family: $font1;
     text-shadow: 0 0 10px $color5, 0 0 $color3, 0 0 10px $color1 ;
     text-align: center;
-    background-image: url(./img/cazo-cerezas-sobre-mesa-madera-negra.jpg);
+    background-image: url(./img/cazo-cerezas-sobre-mesa-madera-n.jpg);
     background-size: cover;
     background-position: center;
     .origen {
@@ -104,7 +104,7 @@ $font4: 'Moon Dance', cursiva;
     background-color: $color2;
     font-family: $font1;
     font-size: 12px;
-    margin: 50px 5px 5px 500px;
+    margin: 50px 5px 5px 100px;
     .btn :hover{
         color: $color4;
     }
@@ -162,12 +162,12 @@ $font4: 'Moon Dance', cursiva;
     padding: 0px 20px 10px 30px;
 }
 .ratio{
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 
 
-    .galeria {
+.galeria {
         min-height: auto;
         width: auto;
         background-color: $color4;
@@ -199,8 +199,8 @@ $font4: 'Moon Dance', cursiva;
 
     .img2 {
         grid-area: img2;
-        background-image: url(img/1.jpg);
-        background-size: 90%;
+        background-image: url(img/1\ \(1\).jpg);
+        background-size: 80%;
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 4px;
@@ -224,7 +224,7 @@ $font4: 'Moon Dance', cursiva;
 
     .img5 {
         grid-area: img5;
-        background-image: url(img/3.jpg);
+        background-image: url(img/3\ \(1\).jpg);
     }
 
     .img6 {
@@ -240,6 +240,11 @@ $font4: 'Moon Dance', cursiva;
     background-image: url(img/chacra.jpg);
     background-size: cover;
     background-position: center;
+}
+.preguntas{
+        font-family: $font1;
+        padding: 0px 10px 0px 10px;
+        margin: 2px 25px 2px 20px;
 }
 .card{
     font-family: $font3;
@@ -305,9 +310,6 @@ footer {
     color: $color4;
 }
 
-.preguntas {
-    font-family: $font1;
-    padding: 0px 10px 0px 200px;
 
     .btn2 {
         background-color: $color1;
@@ -316,13 +318,12 @@ footer {
         font-size: 15px;
         margin: 10px 5px 5px 200px;
     }
-}
 
 
 .mapa {
     font-size: $font1;
     width: 100%;
-    margin: 0px 5px 5px 100px;
+    margin: 0px 5px 20px 20px;
 }
 
 .redes2 {
