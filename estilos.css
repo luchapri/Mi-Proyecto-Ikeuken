@@ -221,6 +221,20 @@ html {
   font-size: 15px;
 }
 
+.whatsapp-fidex img {
+  z-index: 999;
+  width: 60px;
+  height: 65px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 23px;
+  animation-name: animWhatsapp;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  margin: 5px 5px 5px 10px;
+}
+
 footer {
   display: flex;
   flex-wrap: auto;
@@ -289,6 +303,14 @@ footer .redes i {
   font-family: Basic;
 }
 
+@keyframes animWhatsapp {
+  0% {
+    transform: scale(1.1) rotate(0deg);
+  }
+  50% {
+    transform: scale(0.85, 0.85) rotate(5deg);
+  }
+}
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -324,6 +346,9 @@ footer .redes i {
   .iframe {
     width: 360px;
     height: 315px;
+  }
+  .whatsapp-fidex img {
+    margin: 5px 5px 5px 400px;
   }
 }
 @media only screen and (min-width: 570px) {
@@ -364,6 +389,9 @@ footer .redes i {
   .contacto {
     margin: 500px 60px 10px 1000px;
   }
+  .whatsapp-fidex img {
+    margin: 5px 5px 5px 500px;
+  }
 }
 @media only screen and (min-width: 600px) {
   .btn {
@@ -397,6 +425,9 @@ footer .redes i {
     font-size: 40px;
     padding: 80px 10px 20px 150px;
   }
+  .whatsapp-fidex img {
+    margin: 5px 5px 5px 600px;
+  }
 }
 @media only screen and (min-width: 796px) {
   .origen {
@@ -424,11 +455,17 @@ footer .redes i {
   .main2 {
     height: 80vh;
   }
+  .whatsapp-fidex img {
+    margin: 5px 5px 5px 900px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .main .btn {
     font-size: 15px;
     margin: 50px, 5px 20px 400px;
+  }
+  .whatsapp-fidex img {
+    margin: 5px 5px 5px 950px;
   }
 }
 @media only screen and (min-width: 1045px) {
@@ -438,5 +475,15 @@ footer .redes i {
   .btn {
     font-size: 10px;
     margin: 50px 5px 5px 750px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .whatsapp-fidex img {
+    margin: 5px 5px 5px 1100px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .whatsapp-fidex img {
+    margin: 5px 5px 5px 1300px;
   }
 }/*# sourceMappingURL=estilos.css.map */
