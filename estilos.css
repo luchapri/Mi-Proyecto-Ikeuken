@@ -54,14 +54,14 @@ html {
 }
 .main .origen {
   font-family: Quentin;
-  font-size: 40px;
-  padding: 100px 20px 20px 100px;
+  font-size: 30px;
+  padding: 130px 20px 20px 10px;
 }
 .main .btn {
   background-color: #95B28D;
   font-family: Basic;
   font-size: 12px;
-  margin: 50px 5px 5px 500px;
+  margin: 30px 5px 5px 10px;
 }
 .main .btn .btn :hover {
   color: #000;
@@ -151,7 +151,7 @@ html {
 
 .galeria {
   min-height: auto;
-  width: 1300px;
+  width: auto;
   background-color: #000;
   display: grid;
   grid-template-columns: 1fr 20% 1fr 1fr;
@@ -295,6 +295,11 @@ footer .redes i {
   }
   100% {
     opacity: 1;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .origen {
+    font: size 30px;
   }
 }
 @media only screen and (min-width: 361px) {
