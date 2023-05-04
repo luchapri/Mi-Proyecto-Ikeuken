@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(./font/Basic\ Light.ttf);
 @import url(./font/Quentin.otf);
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,200&family=Rubik+Iso&family=Ysabeau:wght@100&display=swap");
@@ -212,6 +213,18 @@ html {
   width: 100%;
   background-color: #8A8D8E;
   background-image: url(img/chacra.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main4 {
+  height: 30vh;
+  width: 100%;
+  color: #95B28D;
+  font-family: Quentin;
+  text-shadow: 0 0 10px #fff, 0 0 #8A8D8E, 0 0 10px #992F59;
+  text-align: center;
+  background-image: url(img/Sin\ título-3.png);
   background-size: cover;
   background-position: center;
 }

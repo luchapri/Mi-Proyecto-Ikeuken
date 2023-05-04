@@ -241,6 +241,17 @@ $font4: 'Moon Dance', cursiva;
     background-size: cover;
     background-position: center;
 }
+.main4{
+    height: 30vh;
+    width: 100%;
+    color: $color2;
+    font-family: $font2;
+    text-shadow: 0 0 10px $color5, 0 0 $color3, 0 0 10px $color1 ;
+    text-align: center;
+    background-image: url(img/Sin\ título-3.png);
+    background-size: cover;
+    background-position: center;
+}
 .preguntas{
         font-family: $font1;
         padding: 0px 10px 0px 10px;
