@@ -7,16 +7,10 @@
 /*# sourceMappingURL=estilos.css.map */
 /*# sourceMappingURL=estilos.css.map */
 
-@import url(./font/Basic\ Light.ttf);
-@import url(./font/Quentin.otf);
+@import url(../font/BasicLight.ttf);
+@import url(../font/Quentin.otf);
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,200&family=Rubik+Iso&family=Ysabeau:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Moon+Dance & family= Nunito+Sans:ital,wght@0,300;1,200 & family= Oooh+Baby & family= Rubik+ Iso & family= Susurro & display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 html {
     scroll-behavior: smooth;
@@ -52,7 +46,7 @@ $font4: 'Moon Dance', cursiva;
         justify-content: flex-end;
         width: 1400px;
         height: 100px;
-        font-family: $font1;
+        font-family: $font3;
         font-size: 10px;
     }
 
