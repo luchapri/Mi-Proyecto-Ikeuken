@@ -10,12 +10,10 @@
     font-family: "Quentin";
     src: url(./font/Quentin.otf);
 }
-
-// @import url(./font/Basic\Light.ttf);
-// @import url(./font/Quentin.otf);
-// @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,200&family=Rubik+Iso&family=Ysabeau:wght@100&display=swap');
-// @import url('https://fonts.googleapis.com/css2? family= Moon+Dance & family= Nunito+Sans:ital,wght@0,300;1,200 & family= Oooh+Baby & family= Rubik+ Iso & family= Susurro & display=swap');
-
+@font-face {
+    font-family: "Basic";
+    src: url(./font/Basic\ Light.ttf);
+}
 html {
     scroll-behavior: smooth;
 }
@@ -81,7 +79,7 @@ $font4: 'Moon Dance', cursiva;
         color: $color4;
     }   
         .h5 {
-            font-family: $font3;
+            font-family: $font1;
             font-size: 17px;
             font-weight: bold;
             text-align: center;
@@ -107,7 +105,7 @@ $font4: 'Moon Dance', cursiva;
     color: $color4;
 }   
     .h5 {
-        font-family: $font3;
+        font-family: $font1;
         font-size: 17px;
         font-weight: bold;
         text-align: center;
@@ -252,9 +250,17 @@ $font4: 'Moon Dance', cursiva;
         padding: 0px 10px 0px 10px;
         margin: 2px 25px 2px 20px;
 }
+
 .card{
-    font-family: $font3;
-    font-size: 15px;
+    font-family: $font1;
+    font-size: 20px;
+    color:$color3;
+    font-weight: lighter;
+    .h2{
+        font-family: $font2;
+        text-align: center;
+        margin: 30px 20px 70px 20px;
+    }
 }
 
 // .antiguos{

@@ -11,6 +11,10 @@
   font-family: "Quentin";
   src: url(./font/Quentin.otf);
 }
+@font-face {
+  font-family: "Basic";
+  src: url(./font/Basic\ Light.ttf);
+}
 html {
   scroll-behavior: smooth;
 }
@@ -65,7 +69,7 @@ html {
   color: #000;
 }
 .main .btn .h5 {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: Basic;
   font-size: 17px;
   font-weight: bold;
   text-align: center;
@@ -91,7 +95,7 @@ html {
   color: #000;
 }
 .btn .h5 {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: Basic;
   font-size: 17px;
   font-weight: bold;
   text-align: center;
@@ -230,8 +234,15 @@ html {
 }
 
 .card {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 15px;
+  font-family: Basic;
+  font-size: 20px;
+  color: #8A8D8E;
+  font-weight: lighter;
+}
+.card .h2 {
+  font-family: Quentin;
+  text-align: center;
+  margin: 30px 20px 70px 20px;
 }
 
 .whatsapp-fidex img {
