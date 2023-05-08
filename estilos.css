@@ -28,6 +28,7 @@ html {
   height: 60px;
 }
 .header .navbar {
+  height: 100%;
   font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
 }
