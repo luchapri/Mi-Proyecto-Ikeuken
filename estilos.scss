@@ -6,11 +6,15 @@
 
 /*# sourceMappingURL=estilos.css.map */
 /*# sourceMappingURL=estilos.css.map */
+@font-face {
+    font-family: "Quentin";
+    src: url(./font/Quentin.otf);
+}
 
-@import url(./font/Basic\Light.ttf);
-@import url(./font/Quentin.otf);
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,200&family=Rubik+Iso&family=Ysabeau:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2? family= Moon+Dance & family= Nunito+Sans:ital,wght@0,300;1,200 & family= Oooh+Baby & family= Rubik+ Iso & family= Susurro & display=swap');
+// @import url(./font/Basic\Light.ttf);
+// @import url(./font/Quentin.otf);
+// @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,200&family=Rubik+Iso&family=Ysabeau:wght@100&display=swap');
+// @import url('https://fonts.googleapis.com/css2? family= Moon+Dance & family= Nunito+Sans:ital,wght@0,300;1,200 & family= Oooh+Baby & family= Rubik+ Iso & family= Susurro & display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -39,7 +43,6 @@ $font4: 'Moon Dance', cursiva;
     .navbar{
         font-family: $font3;
         font-size: 20px;
-
     }
     .nav {
         display: flex;
@@ -51,8 +54,6 @@ $font4: 'Moon Dance', cursiva;
     }
 
 }
-
-
 .main {
     height: 30vh;
     width: 100%;
