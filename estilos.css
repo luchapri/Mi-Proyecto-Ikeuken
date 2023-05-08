@@ -460,6 +460,11 @@ footer .redes i {
     margin: 5px 5px 5px 600px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .header .navbar {
+    font-size: 15px;
+  }
+}
 @media only screen and (min-width: 796px) {
   .origen {
     font-size: 50px;
