@@ -21,7 +21,7 @@ html {
 
 .header {
   width: 100%;
-  height: 80px;
+  height: 70px;
 }
 .header .logo {
   width: 30%;
@@ -30,7 +30,9 @@ html {
 .header .navbar {
   height: 100%;
   font-family: Basic;
-  font-size: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
 }
 .header .nav {
   display: flex;
@@ -46,7 +48,7 @@ html {
   width: 100%;
   color: #95B28D;
   font-family: Quentin;
-  text-shadow: 0 0 10px #fff, 0 0 #8A8D8E, 0 0 10px #992F59;
+  text-shadow: 0 0 50px #fff, 0 0 10px #8A8D8E, 0 0 10px #95B28D;
   text-align: center;
   background-image: url(./img/cazo-cerezas-sobre-mesa-madera-n.jpg);
   background-size: cover;
@@ -54,59 +56,34 @@ html {
 }
 .main .origen {
   font-family: Quentin;
-  font-size: 30px;
-  padding: 130px 20px 20px 10px;
+  font-size: 25px;
+  padding: 50px 20px 20px 70px;
 }
 .main .btn {
+  height: 40px;
+  width: 110px;
   background-color: #95B28D;
   font-family: Basic;
   font-size: 12px;
-  margin: 30px 5px 5px 10px;
+  margin: 40px 5px 5px 10px;
 }
-.main .btn .btn :hover {
-  color: #000;
-}
-.main .btn .btn :hover {
+.main .btn :hover {
   color: #000;
 }
 .main .btn .h5 {
   font-family: Basic;
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 15px #fff;
   font-weight: bold;
   text-align: center;
   color: #000;
-  text-shadow: 12px #fff;
   animation-duration: 1s;
   animation-name: aparecer;
   animation-delay: 2s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-}
-
-.btn {
-  background-color: #95B28D;
-  font-family: Basic;
-  font-size: 12px;
-  margin: 50px 5px 5px 100px;
-}
-.btn .btn :hover {
-  color: #000;
-}
-.btn .btn :hover {
-  color: #000;
-}
-.btn .h5 {
-  font-family: Basic;
-  font-size: 17px;
-  font-weight: bold;
-  text-align: center;
-  color: #000;
-  text-shadow: 7px #000 #8A8D8E #fff;
-  animation-duration: 2s;
-  animation-name: aparecer;
-  animation-delay: 2s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+  padding-top: 5px;
 }
 
 .sec {
@@ -131,7 +108,7 @@ html {
   font-size: 20px;
   line-height: 30px;
   color: #8A8D8E;
-  padding: 55px;
+  padding: 0px 50px;
 }
 
 .cont2 {
@@ -257,28 +234,7 @@ html {
   animation-name: animWhatsapp;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  margin: 5px 5px 5px 10px;
-}
-
-footer {
-  display: flex;
-  flex-wrap: auto;
-  width: 100%;
-  height: 110px;
-  background: rgb(153, 48, 90);
-  color: #000;
-  text-align: center;
-  font-size: 10px;
-  padding: 30px;
-}
-footer .redes :hover {
-  color: #95B28D;
-}
-footer .redes i {
-  font-size: 20px;
-  white-space: 10px;
-  letter-spacing: 100px;
-  color: #000;
+  margin: 5px 5px 15px 10px;
 }
 
 .subir {
@@ -312,17 +268,47 @@ footer .redes i {
   margin: 0px 5px 20px 20px;
 }
 
-.redes2 {
-  display: flex;
-  justify-content: space-around;
-  height: 20px;
-  text-align: center;
-  font-family: Basic;
-  font-size: 60px;
-}
-
 .casa {
   font-family: Basic;
+}
+
+.pie {
+  text-align: justify;
+  width: 100%;
+  background-color: #303135;
+  padding: 20px;
+}
+.pie .grupo-1 {
+  text-align: center;
+  padding: 5px;
+  font-family: Basic;
+  color: #fff;
+  font-size: 9px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  grid: gap 50px;
+}
+.pie .grupo-1 .box figure {
+  font-family: Quentin;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.pie .grupo-1 img {
+  width: 60px;
+}
+.pie .grupo-1 .box h6 {
+  margin-bottom: 0px;
+}
+.pie .grupo-2 {
+  color: #fff;
+  font-family: Basic;
+  font-size: 9px;
 }
 
 @keyframes animWhatsapp {
@@ -347,13 +333,13 @@ footer .redes i {
   }
   .header {
     width: 100%;
-    height: 130px;
+    height: 70px;
   }
 }
 @media only screen and (min-width: 326px) {
   .header {
     width: 100%;
-    height: 90px;
+    height: 70px;
   }
 }
 @media only screen and (min-width: 361px) {
@@ -383,6 +369,12 @@ footer .redes i {
     margin: 5px 5px 5px 400px;
   }
 }
+@media only screen and (min-width: 488px) {
+  .main .origen {
+    padding: 40px 10px 0px 120px;
+    font-size: 30px;
+  }
+}
 @media only screen and (min-width: 570px) {
   .galeria {
     grid-template-rows: 45px 45px 45px 45px;
@@ -406,11 +398,11 @@ footer .redes i {
 }
 @media only screen and (min-width: 600px) {
   .main {
-    height: 50vh;
+    height: 45vh;
   }
-  .origen {
+  .main .origen {
     padding: 80px 10px 0px 120px;
-    font-size: 45px;
+    font-size: 30px;
   }
   .galeria {
     grid-template-rows: 45px 45px 45px 45px 45px;
@@ -437,7 +429,7 @@ footer .redes i {
     font-size: 13px;
   }
   .sec {
-    font-size: 40px;
+    font-size: 30px;
   }
   .iframe {
     width: 550px;
@@ -483,8 +475,11 @@ footer .redes i {
     font-size: 30px;
     height: 150px;
   }
-  .origen {
-    font-size: 50px;
+  .sec {
+    font-size: 40px;
+  }
+  .main .origen {
+    font-size: 40px;
   }
   .barra a {
     font-size: 15px;
