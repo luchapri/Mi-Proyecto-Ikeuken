@@ -82,6 +82,7 @@ $font4: 'Moon Dance', cursiva;
         margin: 40px 5px 5px 10px;
         :hover{
             color: $color4;
+            text-decoration: none;
         }
         .h5 {
             font-family: $font1;
@@ -264,30 +265,6 @@ $font4: 'Moon Dance', cursiva;
     margin: 5px 5px 15px 10px;
 }
 
-// footer {
-//     display: flex;
-//     flex-wrap: auto;
-//     width: 100%;
-//     height: 110px;
-//     background: rgb(153,48,90);
-//     color: $color4;
-//     text-align: center;
-//     font-size: 10px;
-//     padding: 30px;
-
-//     .redes :hover {
-//         color: $color2;
-//     }
-
-//     .redes i {
-//         font-size: 20px;
-//         white-space: 10px;
-//         letter-spacing: 100px;
-//         color: $color4;
-
-//     }
-// }
-
 .subir {
     position: fixed;
     right: 40 px;
@@ -321,15 +298,6 @@ $font4: 'Moon Dance', cursiva;
     margin: 0px 5px 20px 20px;
 }
 
-// .redes2 {
-//     display: flex;
-//     justify-content: space-around;
-//     height: 20px;
-//     text-align: center;
-//     font-family: $font1;
-//     font-size: 60px;
-// }
-
 .casa {
     font-family: $font1;
 }
@@ -347,10 +315,11 @@ $font4: 'Moon Dance', cursiva;
         font-size: 9px;
         width: 100%;
         max-width: 1200px;
-        margin: 0px;
-        // display: grid;
+        margin:auto;
+        display: grid;
+        grid-gap: 170px;
         grid-template-columns: repeat(3, 1fr);
-        grid: gap 50px;
+        padding: 45px 0px;
         .box figure {
             font-family: $font2;
             width: 100%;
@@ -364,13 +333,24 @@ $font4: 'Moon Dance', cursiva;
                 width: 60px;
             }
         .box h6 {
-            // font-weight: bold;
-            margin-bottom: 0px;
+            margin-bottom: 25px;
+            color: #95B28D;
+            font-family: $font1;
+            font-size: 14px;
+            
+        }
+        .box p{
+            margin-bottom: 10px;
+            margin-top: 2px;
+            padding: 5px;
         }
     }
-    .grupo-2 { color: $color5;
+    .grupo-2 { 
+        color: $color5;
         font-family: $font1;
-        font-size: 9px;
+        font-size:10px;
+        text-align: center;
+        padding: 15px;
         }
 }
 // animaciones
@@ -397,7 +377,18 @@ $font4: 'Moon Dance', cursiva;
 //         height: 415px;
 //     }
 // }
-
+@media screen and (max-width: 800px) {
+    .pie .grupo-1 {
+        text-align: center;
+        padding: 5px;
+        font-family: $font1;
+        color: $color5;
+        font-size: 9px;
+        width: 50%;
+        grid-gap: 0px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 0px;}
+}
 @media only screen and (min-width:320px) {
     .origen {
     font: size 30px;
@@ -406,7 +397,9 @@ $font4: 'Moon Dance', cursiva;
     width: 100%;
     height: 70px;
 }
-}
+    .pie .grupo-1 {
+    display: flex;
+}}
 @media only screen and (min-width:326px) {
     .header {
     width: 100%;
