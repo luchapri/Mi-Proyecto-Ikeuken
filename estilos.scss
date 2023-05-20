@@ -61,16 +61,16 @@ $font4: 'Moon Dance', cursiva;
 .main {
     height: 30vh;
     width: 100%;
-    color: $color2;
+    color: $color5;
     font-family: $font2;
-    text-shadow: 0 0 50px $color5, 0 0 10px$color3, 0 0 10px $color2;
+    text-shadow: 0 0 50px $color4, 0 0 10px$color3, 0 0 10px $color2,;
     text-align: center;
     background-image: url(./img/cazo-cerezas-sobre-mesa-madera-n.jpg);
     background-size: cover;
     background-position: center;
     .origen {
         font-family: $font2;
-        font-size: 25px;
+        font-size: 18px;
         padding: 50px 20px 20px 70px;
     }
     .btn {
@@ -103,13 +103,13 @@ $font4: 'Moon Dance', cursiva;
 }
 
 .sec {
-    background-color: $color5;
+    background-color: #fff;
     height: 25vh;
     text-align: center;
     font-family: $font2;
     font-weight: lighter;
-    font-size: 30px;
-    color: $color3;
+    font-size: 25px;
+    color: $color2;
     padding: 100px 50px 0px 50px;
 }
 
@@ -123,7 +123,7 @@ $font4: 'Moon Dance', cursiva;
     font-family: $font1;
     font-size: 20px;
     line-height: 30px;
-    color: $color3;
+    color: $color6;
     padding: 0px 50px;
 }
 
@@ -140,11 +140,15 @@ $font4: 'Moon Dance', cursiva;
 .ratio{
     margin-top: 0px;
 }
+.main11{
+    width: auto;
+    background-color: $color4;
 
+}
 
 
 .galeria {
-        min-height: auto;
+        min-height: 300px;
         width: auto;
         background-color: $color4;
         display: grid;
@@ -212,7 +216,7 @@ $font4: 'Moon Dance', cursiva;
 .main3 {
     height: 70vh;
     width: 100%;
-    background-color: $color3;
+    background-color: $color6;
     background-image: url(img/chacra.jpg);
     background-size: cover;
     background-position: center;
@@ -220,13 +224,20 @@ $font4: 'Moon Dance', cursiva;
 .main4{
     height: 30vh;
     width: 100%;
-    color: $color2;
+    color: $color5;
     font-family: $font2;
-    text-shadow: 0 0 10px $color5, 0 0 $color3, 0 0 10px $color1 ;
+    // text-shadow: 0 0 10px $color, 0 0 $color2, 0 0 10px $color3 ;
     text-align: center;
-    background-image: url(img/Sin\ título-3.png);
+    background-image: url(img/FONDO\ MANOS.jpg);
     background-size: cover;
     background-position: center;
+    .encontramos {
+        font-family: $font2;
+        text-align: center;
+        font-size: 35px;
+        font-weight: lighter;
+        padding-top: 70px;
+    }
 }
 .preguntas{
         font-family: $font1;
@@ -237,20 +248,15 @@ $font4: 'Moon Dance', cursiva;
 .card{
     font-family: $font1;
     font-size: 20px;
-    color:$color3;
+    color: $color6;
     font-weight: lighter;
     .h2{
         font-family: $font2;
         text-align: center;
+        font-size: 30px;
         margin: 30px 20px 70px 20px;
     }
 }
-
-// .antiguos{
-//     font-size: Quentin;
-//     font-size: 30px;
-// }
-
 .whatsapp-fidex img{
     z-index: 999;
     width: 60px;
@@ -276,32 +282,35 @@ $font4: 'Moon Dance', cursiva;
     font-size: 30px;
     margin: 800vh;
 }
-
-.subir :hover {
-    color: $color4;
-}
-
-
-    .btn2 {
+.btn2 {
         background-color: $color1;
         font-family: $font1;
         font-weight: bold;
         font-size: 15px;
         margin: 10px 5px 5px 200px;
     }
-
-
 .mapa {
-    font-family: $font1;
-    color: $color3;
+    font-family: $font2;
+    color: $color6;
     width: 100%;
-    margin: 0px 5px 20px 20px;
+    margin: 30px 5px 20px 50px;
 }
 
 .casa {
     font-family: $font1;
 }
-
+.btn {
+    height: 40px;
+    width: 110px;
+    background-color: $color2;
+    font-family: $font1;
+    font-size: 12px;
+    margin: 40px 5px 5px 10px;
+    :hover{
+        color: $color4;
+        text-decoration: none;
+    }
+}
 .pie {
     text-align: justify;
     width: 100%;
@@ -352,6 +361,7 @@ $font4: 'Moon Dance', cursiva;
         padding: 15px;
         }
 }
+
 // animaciones
 @keyframes animWhatsapp{
     0%{
@@ -540,7 +550,7 @@ $font4: 'Moon Dance', cursiva;
 @media only screen and (min-width:766px) {
     .origen {
         font-size: 40px;
-        padding: 80px 10px 20px 150px;
+        padding: 85px 10px 20px 150px;
     }
     .whatsapp-fidex img{
         margin: 5px 5px 5px 600px;
@@ -604,7 +614,7 @@ $font4: 'Moon Dance', cursiva;
 
 @media only screen and (min-width:1045px) {
     .origen {
-        padding: 130px 10px 20px 270px;
+        padding: 135px 10px 20px 270px;
     }
 
     .btn {
