@@ -37,9 +37,14 @@ $font4: 'Moon Dance', cursiva;
 .header{
     width: 100%;
     height: 70px;
+    .navbar-brand{
+        font-family: $font2;
+        font-size: 15px;
+        font-weight: lighter;
+    }
     .logo {
         width: 30%;
-        height: 50px;
+        height: 30px;
     }
     .navbar{
         height: 100%;
