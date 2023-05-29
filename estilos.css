@@ -30,6 +30,7 @@ html {
 .header .logo {
   width: 30%;
   height: 30px;
+  margin: auto;
 }
 .header .navbar {
   height: 100%;
