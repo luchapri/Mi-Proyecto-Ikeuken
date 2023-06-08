@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../styles.css/estilos.css">
     <link rel="shortcut icon" href="../img/para arriba.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
@@ -100,43 +100,34 @@
     <h1 class="sec sec1">Dejanos tu pregunta</h1>
 
 <!-- section 2 preguntas inicia -->
-    <section class="preguntas">
-        <form class="needs-validation" novalidate>
-            <div class="form-row">
-                <div class="col-md-12 mb-3">
-                    <label for="validationTooltip01"> Nombre</label>
-                    <input type="text" class="form-control" id="validationTooltip01"  required>
-                    <div class="valid-tooltip">
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="validationTooltip02">Apellido</label>
-                    <input type="text" class="form-control" id="validationTooltip02"  required>
-                    <div class="valid-tooltip">
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="validationTooltip03">Ciudad</label>
-                    <input type="text" class="form-control" id="validationTooltip03" required>
-                    <div class="invalid-tooltip">
-            </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="validationTooltip04"> Pais </label>
-                <input type="text" class="form-control" id="validationTooltip04"  required>
-                <div class="valid-tooltip">
-                </div>
-            </div>
-            <div class="col-md-12 mb-12">
-                    <label for="validationTooltip05">Dejanos tu preguntas</label>
-                    <input type="text" class="form-control" id="validationTooltip05" required>
-                    <div class="invalid-tooltip">
-                    </div>
-                </div>
-            </div>
-            <button type="button" class="btn btn-secondary"a class="contacto" href="#">Enviar</button>
-        </form>
-    </section>
+<section class="pp">
+<div class="form-content">
+    <form action="https://formsubmit.co/ikeukenk.cerezas@gmail.com" method="POST">
+        <label for="name">Nombre</label>
+        <input type="text" name="Nombre" id="name">
+
+        <label for="apelli">Apellido</label>
+        <input type="text" name="Apellido" id="apelli">
+
+        <label for="city">Ciudad</label>
+        <input type="text" name="Ciudad" id="city">
+
+        <label for="pai">Pais</label>
+        <input type="text" name="Pais" id="pai">
+
+        <label for="email"> Correo electronico</label>
+        <input type="email" name="email" id="email">
+
+        <label for="pregunta"> Dejanos tu pregunta</label>
+        <textarea name="pregunta" id="pregunta" cols="30" rows="10"></textarea>
+
+        <input class="prebtn" type="submit" value="Enviar">
+
+        <input type="hidden" name="_next" value="http://127.0.0.1:5501/pag/preguntas.html">
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+</div>
+</section>
 <!-- section 2 preguntas fin -->
 <div class="whatsapp-fidex">
     <a href=" https://api.whatsapp.com/send?phone=+54 9 11 36823337" class="btno-wsp" target="_blank">
@@ -149,7 +140,7 @@
     <div class="box">
         <figure>
             <a href="#">
-                <img src="./img/logo solo.png" alt="">
+                <img src="../img/logo solo.png" alt="">
             </a>
             <h4>I  Keu  Kenk</h4>
         </figure>
