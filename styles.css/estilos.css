@@ -4,8 +4,6 @@
   padding: 0;
 }
 
-
-
 @font-face {
   font-family: "Quentin";
   src: url(../font/Quentin.otf);
@@ -17,43 +15,82 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  padding: 1000px, 20px 0;
+}
 
+/* barra navegadora*/
+
+header {
+  font-family: "Basic";
+  font-size: 15px;
+}
 .header {
+  background-color: #8A8D8E;
+  height: 80px;
+  position: fixed;
   width: 100%;
-  height: 100px;
+  top: 0;
+  left: 0;
+
 }
-.header .navbar-brand {
-  font-family: Quentin;
-  font-size: 15px;
-  font-weight: lighter;
+.logo {
+  color: #000;
+  font-size: 40px;
+  padding: 0 40px;
+  line-height: 80px;
+  font-family: "Quentin";
 }
-.header .logo {
-  width: 30%;
-  height: 30px;
-  margin: auto;
-}
-.header .navbar {
-  height: 100%;
-  font-family: Basic;
-  font-size: 15px;
-  font-weight: bold;
-  color: #fff;
-}
-.header .nav {
-  display: flex;
-  justify-content: flex-end;
-  width: 1400px;
-  height: 100px;
-  font-family: "Nunito Sans", sans-serif;
-  color: #fff;
+.chana {
   font-size: 10px;
 }
+nav{
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+}
 
+.nav-link{
+  color: #fff;
+  text-decoration: none;
+}
+.nav-menu {
+  
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+.nav-menu-item {
+  margin: 0 10px;
+  line-height: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  color:#95B28D;
+}
+
+.nav-toggle{
+  color: #000;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+}
+/* fin de barra */
+/* main index */
 .main {
-  height: 30vh;
+  height: 100vh;
   width: 100%;
   color: #fff;
   font-family: Quentin;
+  padding: 300px 10px 10px 400px;
   text-shadow: 0 0 50px #000, 0 0 10px #8A8D8E, 0 0 10px #95B28D;
   text-align: center;
   background-image: url(../img/cazo-cerezas-sobre-mesa-madera-n.jpg);
@@ -62,8 +99,8 @@ html {
 }
 .main .origen {
   font-family: Quentin;
-  font-size: 18px;
-  padding: 50px 20px 20px 70px;
+  font-size: 55px;
+  /* padding-top: 100px; */
 }
 .main .btn {
   height: 40px;
@@ -92,7 +129,7 @@ html {
   animation-iteration-count: infinite;
   padding-top: 5px;
 }
-
+/* incia titulo desde lo mas profundo */
 .sec {
   background-color: #fff;
   height: 25vh;
@@ -101,9 +138,9 @@ html {
   font-weight: lighter;
   font-size: 25px;
   color: #95B28D;
-  padding: 100px 50px 10px 50px;
+  padding: 100px 200px;
 }
-
+/* inicia texto */
 .cont1 {
   background-color: #fff;
   background-size: cover;
@@ -115,9 +152,9 @@ html {
   font-size: 20px;
   line-height: 30px;
   color: #303135;
-  padding: 0px 50px;
+  padding: 10px 50px;
 }
-
+/* inicia video */
 .cont2 {
   background-color: #fff;
   width: 100%;
@@ -126,7 +163,7 @@ html {
   text-align: center;
   font-family: #fff;
   font-size: 30px;
-  padding: 0px 20px 10px 30px;
+  padding: 0px 10px 10px 10px;
 }
 
 .ratio {
@@ -134,11 +171,13 @@ html {
 }
 
 .main11 {
-  width: auto;
+  height: 90vh;
+  width: 100%;
   background-color: #000;
 }
 
 .galeria {
+  padding-top: 100px;
   min-height: 300px;
   width: auto;
   background-color: #000;
@@ -436,6 +475,95 @@ input , textarea{
   }
 }
 
+@media screen and (max-width: 250px) {
+  .main {
+    height: 30vh;
+    width: 100%;
+    padding: 50px 30px 10px 50px;
+    
+  }
+  .main .origen {
+    font-family: Quentin;
+    font-size: 25px;
+    /* padding-top: 100px; */
+  }
+  .cont1 {
+    padding: 150px 10px 0px 10px;
+    font-size: 15px;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+/* arreglos para barra de navegacion adaptada a celula con menu */
+@media (max-width: 780px){
+.header{
+  height: 60px;
+}
+.logo {
+  
+  font-size: 25px;
+  padding: 0 20px ;
+  line-height: 60px;
+  font-family: "Quentin";
+}
+.nav-menu {
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  background-color: #303135;
+  position: fixed;
+  left: 0;
+  top: 60px;
+  /* width: 100%; */
+  padding: 20px  0;
+
+  /* height: calc(100% - 60px ); */
+  overflow-y: auto;
+  left: 100%;
+  transition: left 0.3s;
+}
+.nav-menu-item {
+  line-height: 70px;
+}
+.nav-menu-link:hover, 
+.nav-menu-link_active
+{
+  color:#95B28D;
+}
+.nav-toggle{
+  display:block;
+}
+.nav-menu-visible {
+left:0 ;
+}
+
+/* main index */
+.main {
+  height: 70vh;
+  padding: 180px 30px 10px 50px;
+}
+.main .origen {
+  font-size: 25px;
+}
+/* fin de arreglos barra de nav adaptable */
+.sec {
+  font-size: 15px;
+  color: #95B28D;
+  padding: 40px 50px 
+}
+}
+
+
+
 @media( max-width: 991px){
   .pp {
     padding: 30px;
@@ -480,21 +608,22 @@ input , textarea{
     display: grid;
   }
 }
-@media only screen and (min-width: 320px) {
+/* @media only screen and (min-width: 320px) {
   .origen {
-    font: size 30px;
-  }
-  .header {
+    font: size 30px; */
+  /* } */
+  /* .header {
     width: 100%;
-    height: 70px;
-  }
-}
-@media only screen and (min-width: 326px) {
-  .header {
+    height: 60px;
+  } */
+/* } */
+/* @media only screen and (min-width: 326px) {
+  /* .header {
     width: 100%;
-    height: 70px;
-  }
-}
+    height: 80px;
+  } */
+
+  
 @media only screen and (min-width: 361px) {
   .btn {
     font-size: 10px;
@@ -522,19 +651,20 @@ input , textarea{
     margin: 5px 5px 5px 400px;
   }
 }
-@media only screen and (min-width: 488px) {
-  .main .origen {
+/* @media only screen and (min-width: 488px) {
+  /* .main .origen {
     padding: 40px 10px 0px 120px;
-    font-size: 30px;
-  }
-}
+    font-size: 30px; */
+  /* } */
+/* } */ 
+
 @media only screen and (min-width: 570px) {
   .galeria {
     grid-template-rows: 45px 45px 45px 45px;
   }
-  header {
+  /* header {
     font-size: 30px;
-  }
+  } */
   .main2 {
     height: 50vh;
   }
@@ -544,25 +674,29 @@ input , textarea{
     font-size: 10px;
     margin: 10px 5px 5px 400px;
   }
-  .origen {
-    padding: 80px 10px 0px 120px;
+  /* .origen {
+    padding: 250px 10px 0px 120px;
     font: size 40px;
-  }
+  } */
 }
-@media only screen and (min-width: 600px) {
-  .main {
-    height: 45vh;
-  }
-  .main .origen {
+/* /* @media only screen and (min-width: 600px) { */
+
+  /* .main {
+    height: 55vh; */
+     
+  /* } */
+  /* .main .origen {
     padding: 80px 10px 0px 120px;
     font-size: 30px;
-  }
+  } */
+
+  @media only screen and (min-width: 600px) { */
   .galeria {
     grid-template-rows: 45px 45px 45px 45px 45px;
   }
-  header {
-    height: 125px;
-  }
+  /* header {
+    height: 300px;
+  } */
   .contacto {
     margin: 500px 60px 10px 1000px;
   }
@@ -578,65 +712,65 @@ input , textarea{
   .galeria {
     grid-template-rows: 100px 50px 70px 70px 100px 50px 50px;
   }
-  .nav {
-    font-size: 13px;
-  }
-  .sec {
+  /* .nav {
+    font-size: 17px;
+  } */
+  /* .sec {
     font-size: 30px;
-  }
+  } */
   .iframe {
     width: 550px;
     height: 415px;
   }
 }
 @media only screen and (min-width: 700px) {
-  .main2 {
-    height: 60vh;
-  }
-  .origen {
+  /* .main {
+    height: 100vh;
+  } */
+  /* .origen {
     font-size: 40px;
-  }
+  } */
 }
 @media only screen and (min-width: 766px) {
-  .origen {
+  /* .origen {
     font-size: 40px;
-    padding: 85px 10px 20px 150px;
-  }
+    /* padding: 85px 10px 20px 150px; */
+  /* } */ */
   .whatsapp-fidex img {
     margin: 5px 5px 5px 600px;
   }
 }
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .header .navbar {
     font-size: 15px;
-  }
-}
+  } */
+/* } */
 @media only screen and (min-width: 796px) {
-  .origen {
+  /* .origen {
     font-size: 50px;
     padding: 90px 10px 20px 170px;
-  }
+  } */
 }
 @media only screen and (min-width: 976px) {
-  .origen {
+  /* .origen {
     font-size: 50px;
     padding: 100px 10px 20px 240px;
   }
-}
+} */
 @media only screen and (min-width: 1000px) {
-  header {
+  /* header {
     font-size: 30px;
-    height: 150px;
-  }
-  .sec {
+    height: 600px;
+  } */
+  /* .sec {
     font-size: 40px;
-  }
-  .main .origen {
+  } */
+  /* .main .origen {
     font-size: 40px;
-  }
-  .barra a {
+  } */
+  /* .barra a {
     font-size: 15px;
-  }
+  } */
   .main2 {
     height: 80vh;
   }
@@ -654,9 +788,9 @@ input , textarea{
   }
 }
 @media only screen and (min-width: 1045px) {
-  .origen {
+  /* .origen {
     padding: 135px 10px 20px 270px;
-  }
+  } */
   .btn {
     font-size: 10px;
     margin: 50px 5px 5px 750px;
@@ -671,4 +805,5 @@ input , textarea{
   .whatsapp-fidex img {
     margin: 5px 5px 5px 1300px;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+}
