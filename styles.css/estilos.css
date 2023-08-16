@@ -136,7 +136,7 @@ nav{
   text-align: center;
   font-family: Quentin;
   font-weight: lighter;
-  font-size: 25px;
+  font-size: 35px;
   color: #95B28D;
   padding: 100px 200px;
 }
@@ -152,7 +152,7 @@ nav{
   font-size: 20px;
   line-height: 30px;
   color: #303135;
-  padding: 10px 50px;
+  padding: 20px 20px 50px 20px;
 }
 /* inicia video */
 .cont2 {
@@ -177,8 +177,8 @@ nav{
 }
 
 .galeria {
-  padding-top: 100px;
-  min-height: 300px;
+  padding-top: 80px;
+  min-height: 800px;
   width: auto;
   background-color: #000;
   display: grid;
@@ -212,7 +212,7 @@ nav{
 .img3 {
   grid-area: img3;
   background-image: url(../img/4.png);
-  background-size: 100%;
+  background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -220,7 +220,7 @@ nav{
 .img4 {
   grid-area: img4;
   background-image: url(../img/car.jpg);
-  background-size: 90%;
+  background-size: 80%;
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -491,10 +491,13 @@ input , textarea{
     padding: 150px 10px 0px 10px;
     font-size: 15px;
   }
-  
-
+  .main11 {
+    height: 50vh;
 }
-
+.galeria {
+  padding-top: 50px;
+  min-height: 435px;
+}
 
 
 
@@ -556,9 +559,23 @@ left:0 ;
 }
 /* fin de arreglos barra de nav adaptable */
 .sec {
-  font-size: 15px;
+  font-size: 25px;
   color: #95B28D;
   padding: 40px 50px 
+}
+/* contein 1 en historia */
+.cont1 {
+  background-color: #fff;
+  background-size: cover;
+  width: 100%;
+  height: 20%;
+  background-repeat: no-repeat;
+  text-align: justify;
+  font-family: Basic;
+  font-size: 20px;
+  line-height: 30px;
+  color: #303135;
+  padding: 20px 20px 50px 20px;
 }
 }
 
@@ -701,7 +718,7 @@ left:0 ;
     margin: 500px 60px 10px 1000px;
   }
   .whatsapp-fidex img {
-    margin: 5px 5px 5px 500px;
+    margin: 5px 5px 5px 700px;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -788,9 +805,7 @@ left:0 ;
   }
 }
 @media only screen and (min-width: 1045px) {
-  /* .origen {
-    padding: 135px 10px 20px 270px;
-  } */
+  
   .btn {
     font-size: 10px;
     margin: 50px 5px 5px 750px;
@@ -801,9 +816,9 @@ left:0 ;
     margin: 5px 5px 5px 1100px;
   }
 }
+
 @media only screen and (min-width: 1400px) {
   .whatsapp-fidex img {
     margin: 5px 5px 5px 1300px;
   }
-}
 }
